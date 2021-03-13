@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right top, #23074d, #cc5333);
+}
+
+main.container .calculator {
+  position: relative;
+  width: 320px;
+  height: 500px;
+  background: slategray;
+  border-radius: 8px;
+}
+
+.calculator .display {
+  height: 100px;
+  margin: 6px 6px 0px 6px;
+}
+
+.display .screen {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  text-align: right;
+  border: none;
+  outline: none;
+  font-size: 2.4rem;
+}
+
+.keyboard {
+  height: 400px;
+}
+
+.keyboard button {
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.keyboard button.number {
+  background: linear-gradient(to right top, #005aa7, #fffde4);
+}
+
+.keyboard button:active {
+  background: #14af14;
+  color: #fff;
+  font-size: 13px;
+}
+
+.keyboard button:nth-child(1) {
+  background: #fd0100;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(2) {
+  background: #f33e92;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(3) {
+  background: #2ab5f5;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(4) {
+  background: #304eaf;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(8) {
+  background: #c11ef3;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(12) {
+  background: #272255;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(16) {
+  background: #07a072;
+  color: #fff;
+  font-size: 18px;
+}
+.keyboard button:nth-child(20) {
+  background: #ec6104;
+  color: #fff;
+  font-size: 18px;
+}

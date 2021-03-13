@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Vanilla JS calculator</title>
+</head>
+<body>
+  <main class="container">
+    <form class="calculator" name="cal">
+      <div class="display">
+        <input class="screen" type="text" name="output" readonly>
+      </div>
+      <div class="keyboard">
+        <button type="button" class="number" onclick="cal.output.value = '' ">AC</button>
+        <button type="button" class="number" 
+        onclick="cal.output.value =Math.sqrt(cal.output.value);">&#8730;</button>
+        <button type="button" class="number" onclick="cal.output.value /=100 "> % </button>
+        <button type="button" class="number" onclick="cal.output.value += '/' ">&#247;</button>
+        <button type="button" class="number" onclick="cal.output.value += '7' ">7</button>
+        <button type="button" class="number" onclick="cal.output.value += '8' ">8</button>
+        <button type="button" class="number" onclick="cal.output.value += '9' ">9</button>
+        <button type="button" class="number" onclick="cal.output.value += '*' ">&times;</button>
+        <button type="button" class="number" onclick="cal.output.value += '4' ">4</button>
+        <button type="button" class="number" onclick="cal.output.value += '5' ">5</button>
+        <button type="button" class="number" onclick="cal.output.value += '6' ">6</button>
+        <button type="button" class="number" onclick="cal.output.value += '-' "> - </button>
+        <button type="button" class="number" onclick="cal.output.value += '1' ">1</button>
+        <button type="button" class="number" onclick="cal.output.value += '2' ">2</button>
+        <button type="button" class="number" onclick="cal.output.value += '3' ">3</button>
+        <button type="button" class="number" onclick="cal.output.value += '+' ">+</button>
+        <button type="button" class="number" onclick="cal.output.value += '00' ">00</button>
+        <button type="button" class="number" onclick="cal.output.value += '0' ">0</button>
+        <button type="button" class="number" onclick="cal.output.value += '.' ">.</button>
+        <button type="button" class="number" 
+        onclick="cal.output.value = eval(cal.output.value); ">=</button>
+        
+      </div>
+    </form>
+  </main>
+</body>
+</html>
